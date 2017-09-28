@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -158,11 +159,18 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="animationTest.html" />
     <Content Include="index.html" />
     <Content Include="Static\Css\main.css" />
     <Content Include="Static\Js\jquery.playSound.js" />
     <Content Include="Static\Js\jquery.rotate.2.3-mini.js" />
     <Content Include="Static\Js\main.js" />
+    <Content Include="Static\MotavationImages\closed-present.png" />
+    <Content Include="Static\MotavationImages\nature-hills-sunrise-landscape-3840x2160.jpg" />
+    <Content Include="Static\MotavationImages\open-closed-box-purple.jpg" />
+    <Content Include="Static\MotavationImages\open-closed-box-yellow.jpg" />
+    <Content Include="Static\MotavationImages\present-bottom.png" />
+    <Content Include="Static\MotavationImages\present-top.png" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
