@@ -165,12 +165,18 @@
     <Content Include="Static\Js\jquery.playSound.js" />
     <Content Include="Static\Js\jquery.rotate.2.3-mini.js" />
     <Content Include="Static\Js\main.js" />
+<<<<<<< HEAD
+    <Content Include="Static\MotavationImages\background.jpg" />
+    <Content Include="Static\MotavationImages\open-closed-box-purple.jpg" />
+    <Content Include="Static\MotavationImages\open-closed-box-yellow.jpg" />
+=======
     <Content Include="Static\MotavationImages\closed-present.png" />
     <Content Include="Static\MotavationImages\nature-hills-sunrise-landscape-3840x2160.jpg" />
     <Content Include="Static\MotavationImages\open-closed-box-purple.jpg" />
     <Content Include="Static\MotavationImages\open-closed-box-yellow.jpg" />
     <Content Include="Static\MotavationImages\present-bottom.png" />
     <Content Include="Static\MotavationImages\present-top.png" />
+>>>>>>> f60a865656608d5fda25443abd44250c3b12118a
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

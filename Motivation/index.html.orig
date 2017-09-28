@@ -9,6 +9,7 @@
 <body>
 
     <div class="container">
+<<<<<<< HEAD
         <div class="row justify-content-md-center">
             <div class="col-10 content no-gutters">
                 <div class="row">
@@ -25,9 +26,12 @@
 
 
             </div>
+=======
+        <div class="row">
+           <h1>Quit Smoking</h1>
+           
+>>>>>>> f60a865656608d5fda25443abd44250c3b12118a
         </div>
-        
-       
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
