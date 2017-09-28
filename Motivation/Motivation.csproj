@@ -163,6 +163,9 @@
     <Content Include="Static\Js\jquery.playSound.js" />
     <Content Include="Static\Js\jquery.rotate.2.3-mini.js" />
     <Content Include="Static\Js\main.js" />
+    <Content Include="Static\MotavationImages\background.jpg" />
+    <Content Include="Static\MotavationImages\open-closed-box-purple.jpg" />
+    <Content Include="Static\MotavationImages\open-closed-box-yellow.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
