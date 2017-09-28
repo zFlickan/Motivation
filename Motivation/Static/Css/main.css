@@ -48,7 +48,9 @@ body {
 }
 
 h1 {
-    color: #333;
+    color: #959595;
+    font-weight:normal;
+    margin: 20px 0 0 0;
 }
 
 .container {
@@ -70,13 +72,44 @@ h1 {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
+.content .row:first-child {
+    padding: 0px;
+}
+
+.menu, .menu ~ p {
+   
+    float: right;
+}
 
 .menu {
-    min-width: 30px;
-    min-height: 30px;
+    min-width: 35px;
+    min-height: 35px;
     background-color: #dfdfdf;
-    float: right;
-    border-radius: 0 5px 0 5px;
+    border-radius: 0 10px 0 5px;
+    box-shadow: 0px 1px 2px #333;
+}
+.menu ~ p{
+    margin-right:10px;
+    line-height: 35px;
+    color: #dfdfdf;
+    font-style: italic;
+    display:inline-block;
+     /*text-shadow: 0px 1px 1px #333;*/
+}
+.headlineArea {
+    min-height: 150px;
+    padding-bottom:0;
+}
+.rewardArea {
+    min-height: 250px;
+    padding-top: 0;
+}
+.cookie, .cookieResponse {
+    height: 75px;
+    margin: 20px auto;
+    line-height: 35px;
+    font-style:italic;
+    max-width:450px;
 }
 
 .actionBoard {
@@ -86,106 +119,36 @@ h1 {
     min-height: 120px;
 }
 
-#response {
-    color: darkgreen;
-    margin-top:10px;
-}
-
-#error {
-    color:darkred;
-    margin-top:10px;
-}
-
-body {
-    margin-top:60px
-}
-
-
-.hide, .hidden {
-    display:none;
-}
-
-.show, .visible {
-    display:block;
-}
-.myHeadlines, .exmenu {
-    margin-bottom: 20px;
-    
-}
-
-.buttons, .lamps, .dog {
-    display: block;
-    float: left;
-    height: 220px;
-    /*border: 1px solid black;*/
-}
-.buttons{
-    margin-right: 40px;
-}
-
-.btn-primary{
-    display: block;
-    margin-bottom: 10px;
-    width: 150px;
-}
-.btn-primary:focus{
-    box-shadow:none;
-}
-
-.Ex4Lamps {
-    width: 150px;
-}
-
-.square{
-    width: 400px;
-    height: 400px;
-    border: 1px solid black;
-    background-color: red;
-}
-
-.dogpic{
-    margin:50px;
-}
-.dog{
-    width: 420px;
-    height: 420px;
-    text-align:center;
-    vertical-align: middle;
-}
-.inactive, .inactive:focus, .inactive:hover, .inactive:visited{
-    background-color: darkgray;
-    border: 1px solid gray;
-}
-
 .hidden{
     display:none;
 }
 
-#bottomPresent, #topPresent{
-    float: left;
+ #present {
     position:relative;
+    margin: 0px auto;
+    height:115px;
+    width: 94px;
+    text-align:left;
+    cursor:pointer;
+}
+
+#bottomPresent, #topPresent {
+    position: absolute;
 }
 
 #topPresent {
-    top: 10px;
-}
-.zind{
-    z-index: -1;
+    top: 0px;
+    z-index: 1;
 }
 
- #present {
-    height: 500px;
-    width: 92px;
+#bottomPresent{
+    top:40px;
 }
 
 @keyframes topOff {
     100% {
         top:-40px;
     }
-}
-
-.stayUp {
-    top: -40px;
 }
 
 .topOff {
