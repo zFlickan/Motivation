@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿body {
     background: #a0c2f0 url('../MotavationImages/background.jpg') no-repeat fixed center top;
     background-size: cover;
@@ -85,7 +86,8 @@ h1 {
     background: #dfdfdf;
     min-height: 120px;
 }
-
+=======
+﻿
 #response {
     color: darkgreen;
     margin-top:10px;
@@ -194,3 +196,4 @@ body {
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
 } 
+>>>>>>> f60a865656608d5fda25443abd44250c3b12118a
