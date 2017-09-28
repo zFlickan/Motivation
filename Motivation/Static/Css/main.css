@@ -176,16 +176,13 @@ body {
  #present {
     height: 500px;
     width: 92px;
+    position:relative;
 }
 
 @keyframes topOff {
     100% {
         top:-40px;
     }
-}
-
-.stayUp {
-    top: -40px;
 }
 
 .topOff {

@@ -1,0 +1,25 @@
+﻿@keyframes animateGem {
+    100% {
+        top:50px;
+        left:50px;
+    }
+}
+
+.animateGem {
+    animation-name: animateGem;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+#diamond, #emerald{
+    position:absolute;
+    z-index:4;
+    top:0;
+    left:0;
+}
+
+#parentTag {
+    position:absolute;
+    right:20px;
+}
