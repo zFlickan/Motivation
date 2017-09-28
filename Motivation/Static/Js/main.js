@@ -20,7 +20,6 @@ function getRandomGem() {
             gem = "diamond";
             break;
     }
-    //$("#"+gem).addClass("animateGem")
     animateGem(gem)
 }
 

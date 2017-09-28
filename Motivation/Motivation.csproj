@@ -167,6 +167,8 @@
     <Content Include="Static\Js\jquery.playSound.js" />
     <Content Include="Static\Js\jquery.rotate.2.3-mini.js" />
     <Content Include="Static\Js\main.js" />
+    <Content Include="Static\MotavationImages\chest-small.png" />
+    <Content Include="Static\MotavationImages\chest.png" />
     <Content Include="Static\MotavationImages\background.jpg" />
     <Content Include="Static\MotavationImages\closed-present.png" />
     <Content Include="Static\MotavationImages\fortune-cookie.jpg" />
@@ -192,6 +194,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Static\MotavationImages\chest-small.pdn" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
