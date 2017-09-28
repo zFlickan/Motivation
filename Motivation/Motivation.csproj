@@ -161,6 +161,7 @@
     </Content>
     <Content Include="animationTest.html" />
     <Content Include="index.html" />
+    <Content Include="Static\Css\animations.css" />
     <Content Include="Static\Css\main.css" />
     <Content Include="Static\Js\cookieresponse.js" />
     <Content Include="Static\Js\jquery.playSound.js" />
@@ -169,6 +170,8 @@
     <Content Include="Static\MotavationImages\background.jpg" />
     <Content Include="Static\MotavationImages\closed-present.png" />
     <Content Include="Static\MotavationImages\fortune-cookie.jpg" />
+    <Content Include="Static\MotavationImages\diamond-small.png" />
+    <Content Include="Static\MotavationImages\emerald-small.png" />
     <Content Include="Static\MotavationImages\nature-hills-sunrise-landscape-3840x2160.jpg" />
     <Content Include="Static\MotavationImages\open-closed-box-purple.jpg" />
     <Content Include="Static\MotavationImages\open-closed-box-yellow.jpg" />
