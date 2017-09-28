@@ -17,7 +17,7 @@ $(function () {
             cookieReward(h1, p);
         }
 
-        if (counter === 60) {
+        if (counter === 0) {
             hideAll();
             var h1 = "1 hour reward";
             giftReward(h1, p);
