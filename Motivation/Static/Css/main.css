@@ -73,3 +73,37 @@ body {
 .hidden{
     display:none;
 }
+
+#bottomPresent, #topPresent{
+    float: left;
+    position:relative;
+}
+
+#topPresent {
+    top: 10px;
+}
+.zind{
+    z-index: -1;
+}
+
+ #present {
+    height: 500px;
+    width: 92px;
+}
+
+@keyframes topOff {
+    100% {
+        top:-40px;
+    }
+}
+
+.stayUp {
+    top: -40px;
+}
+
+.topOff {
+    animation-name: topOff;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+} 
