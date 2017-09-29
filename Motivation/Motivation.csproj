@@ -180,6 +180,8 @@
     <Content Include="Static\MotavationImages\present-bottom-with-band.png" />
     <Content Include="Static\MotavationImages\present-bottom.png" />
     <Content Include="Static\MotavationImages\present-top.png" />
+    <Content Include="Static\MotavationImages\ruby-small.png" />
+    <Content Include="Static\MotavationImages\sapphire-small.png" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

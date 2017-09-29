@@ -30,7 +30,7 @@ $(function () {
 })
 
 // to stop the counter
-clearInterval(myInterval);
+//clearInterval(myInterval);
 
 function hideAll() {
     $(".cookieResponse").addClass("hidden");
