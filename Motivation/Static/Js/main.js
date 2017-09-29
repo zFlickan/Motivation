@@ -58,8 +58,7 @@ function getRandomGem() {
             $("#diamondCount").removeClass("hidden")
             break;
     }
-    //transitGem(gem, storedGem)
-    animateGem(gem, storedGem)
+    animateGem(gem)
 }
 
 //function transitGem(gem, storedGem) {

@@ -117,6 +117,8 @@ h1 {
     border-top-right-radius: 0;
     background: #dfdfdf;
     min-height: 120px;
+    padding: 25px 50px;
+    text-align:left;
     z-index: 3;
 }
 
@@ -160,7 +162,51 @@ h1 {
 } 
 
 #treasureChest{
-    float:left;
-   
+    position:relative;
+    width: 60px;
 }
 
+.gem {
+    position: relative;
+    z-index: 2;
+    margin: 35px 35px;
+    width: 20px;
+    animation-name: growGem;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+/*Stop 1: width: 75px; margin: 0 8px;*/
+@keyframes growGem {
+    0% {
+        width: 20px;
+        margin: 35px 35px;
+    }
+
+    100% {
+        width: 75px;
+        margin: 0 8px;
+    }
+}
+
+/* The animation code */
+@keyframes example {
+    0% {left: 0px; top: 0px; }
+
+    25% {left: 200px; top: 0px; }
+
+    50% { left: 200px; top: 200px;  }
+
+    75% {  left: 0px; top: 200px; }
+
+    100% { left: 0px; top: 0px;  }
+}
+
+/* The element to apply the animation to */
+.asdf {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+}
