@@ -42,6 +42,14 @@
 .stashedTreasure {
     margin: auto;
     width: 40%;
-    display: block;
     margin-top: 20px;
+}
+
+.block {
+    display: block;
+}
+
+.treasureCount{
+    float:right;
+    position: absolute;
 }
