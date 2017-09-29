@@ -10,32 +10,70 @@ $("#present").click(function () {
     getRandomGem();
 })
 
+$("#treasureChest").click(function toggleTreasure() {
+    $("#treasureDiv").removeClass("hidden")
+    if ($("#treasureDiv").hasClass("treasureContent")) {
+        $("#treasureDiv").removeClass("treasureContent")
+        $("#treasureDiv").addClass("hideTreasure")
+    } else {
+        $("#treasureDiv").removeClass("hideTreasure")
+        $("#treasureDiv").addClass("treasureContent")
+    }
+})
+
+
+var emeraldCount = 0;
+var sapphireCount = 0;
+var rubyCount = 0;
+var diamondCount = 0;
+
 function getRandomGem() {
     var x = Math.floor((Math.random() * 4) + 1);
     var gem;
+    var count;
     switch (x) {
         case 1:
             $("#emerald").removeClass("hidden");
-            gem = "emerald";
+            gem = "emerald"
+            storedGem = "#storedEmerald"
+            emeraldCount++;
+            count = "#emeraldCount";
+            $("#emeraldCount").html(emeraldCount)
             break;
         case 2: $("#diamond").removeClass("hidden");
-            gem = "diamond";
+            gem = "diamond"
+            storedGem = "#storedDiamond"
+            diamondCount++;
+            count = "#diamondCount";
+            $("#diamondCount").html(diamondCount)
             break;
         case 3:
             $("#ruby").removeClass("hidden");
-            gem = "ruby";
+            gem = "ruby"
+            storedGem = "#storedRuby"
+            rubyCount++;
+            count = "#rubyCount";
+            $("#rubyCount").html(rubyCount)
             break;
         case 4: $("#sapphire").removeClass("hidden");
-            gem = "sapphire";
+            gem = "sapphire"
+            storedGem = "#storedSapphire"
+            sapphireCount++;
+            count = "#sapphireCount";
+            $("#sapphireCount").html(sapphireCount)
             break;
         default: $("#diamond").removeClass("hidden");
-            gem = "diamond";
+            gem = "diamond"
+            storedGem = "#storedDiamond"
+            diamondCount++;
+            count = "#diamondCount";
+            $("#diamondCount").html(diamondCount)
             break;
     }
-    animateGem(gem);
+    animateGem(gem, storedGem, count)
 }
 
-function animateGem(gem) {
+function animateGem(gem, storedGem, count) {
     var p = $("#treasureChest");
     var position = p.offset();
     var elem = document.getElementById(gem);
@@ -54,8 +92,12 @@ function animateGem(gem) {
             topFinished = true;
             clearInterval(id);
             if (topFinished && leftFinished) {
-                //$(elem).addClass("hidden");
-                resetPresent();
+                $(elem).addClass("hidden")
+                elem.style.top = 0 + 'px'
+                elem.style.left = 0 + 'px'
+                $(storedGem).removeClass("hidden")
+                $(storedGem).addClass("block")
+                $(count).removeClass("hidden")
             }
         } else {
             toppos++;
@@ -73,10 +115,12 @@ function animateGem(gem) {
             leftFinished = true;
             clearInterval(id2);
             if (topFinished && leftFinished) {
-                //$(elem).addClass("hidden");
-                
-                $("#present").addClass("fadeOut");
-                resetPresent();
+                $(elem).addClass("hidden")
+                elem.style.top = 0 + 'px'
+                elem.style.left = 0 + 'px'
+                $(storedGem).removeClass("hidden")
+                $(storedGem).addClass("block")
+                $(count).removeClass("hidden")
             }
         } else {
             leftpos++;
