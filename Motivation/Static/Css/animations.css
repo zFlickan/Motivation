@@ -1,7 +1,51 @@
-﻿@keyframes animateGem {
+﻿#diamond, #emerald, #sapphire, #ruby {
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    left: 0;
+}
+
+.treasureContent {
+    min-height: 100px;
+    background: #c2bbbb;
+    top: -120px;
+    animation: revealChestContent;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    z-index: 2;
+}
+
+.hideTreasure {
+    min-height: 100px;
+    background: #c2bbbb;
+    top: -120px;
+    animation: hideChestContent;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    z-index: 2;
+}
+
+@keyframes revealChestContent {
+    0% {
+        top: -120px;
+        min-height: 100px;
+    }
+
     100% {
-        top:50px;
-        left:50px;
+        top: -240px;
+        min-height: 120px;
+    }
+}
+
+@keyframes hideChestContent {
+    0% {
+        top: -240px;
+        min-height: 120px;
+    }
+
+    100% {
+        top: -120px;
+        min-height: 100px;
     }
 }
 
@@ -10,33 +54,6 @@
     animation-iteration-count: 1;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-}
-
-#diamond, #emerald, #sapphire, #ruby{
-    position:absolute;
-    z-index:4;
-    top:0;
-    left:0;
-}
-
-#parentTag {
-    position:absolute;
-    right:20px;
-}
-
-.treasureContent {
-    min-height: 100px;
-    background: #b6ff00;
-    top: -120px;
-    animation: revealChestContent;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    z-index:2;
-}
-
-@keyframes revealChestContent{
-    0% {top: -120px; min-height: 100px; }
-    100% {top: -240px; min-height:120px;}
 }
 
 .stashedTreasure {
@@ -49,7 +66,8 @@
     display: block;
 }
 
-.treasureCount{
-    float:right;
+.treasureCount {
+    float: right;
     position: absolute;
+    color: white;
 }
