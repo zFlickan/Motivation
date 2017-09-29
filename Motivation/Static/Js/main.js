@@ -20,12 +20,10 @@ function getRandomGem() {
             gem = "diamond";
             break;
     }
-    animateGem(gem)
+    animateGem(gem);
 }
 
 function animateGem(gem) {
-    var p = $("#treasureChest");
-    var position = p.position();
     var elem = document.getElementById(gem)
     var toppos = $("#" + gem).position().top
     var leftpos = $("#" + gem).position().left
