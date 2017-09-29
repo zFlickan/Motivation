@@ -19,19 +19,18 @@
     left:0;
 }
 
-#parentTag {
-    position:absolute;
-    right:20px;
-}
 
 .treasureContent {
     min-height: 100px;
-    background: #b6ff00;
+    background: #d2d2d2;
     top: -120px;
+}
+
+.revealContent {
     animation: revealChestContent;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
-    z-index:2;
+    z-index: 2;
 }
 
 @keyframes revealChestContent{

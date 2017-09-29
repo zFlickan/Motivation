@@ -1,8 +1,13 @@
-﻿$("#present").click(function () {
-    setTimeout(function () {
-        ($("#topPresent").addClass("topOff"))
-    }, 50);
-    getRandomGem()
+﻿//$("#present").click(function () {
+//    setTimeout(function () {
+//        ($("#topPresent").addClass("topOff"))
+//    }, 50);
+//    getRandomGem()
+//})
+
+$("#present").click(function () {
+    $("#topPresent").addClass("topOff");
+    getRandomGem();
 })
 
 function getRandomGem() {
@@ -45,11 +50,12 @@ function animateGem(gem) {
 
     var id = setInterval(frame, 5);
     function frame() {
-        if (toppos == (chestTop - boxTop) || (boxTop - chestTop) == toppos) {
+        if (toppos === (chestTop - boxTop) || (boxTop - chestTop) === toppos) {
             topFinished = true;
             clearInterval(id);
             if (topFinished && leftFinished) {
-                $(elem).addClass("hidden")
+                //$(elem).addClass("hidden");
+                resetPresent();
             }
         } else {
             toppos++;
@@ -63,11 +69,14 @@ function animateGem(gem) {
     }
     var id2 = setInterval(frame2, 5);
     function frame2() {
-        if (leftpos == (chestLeft - boxLeft) || (boxLeft - chestLeft) == leftpos) {
+        if (leftpos === (chestLeft - boxLeft) || (boxLeft - chestLeft) === leftpos) {
             leftFinished = true;
             clearInterval(id2);
             if (topFinished && leftFinished) {
-                $(elem).addClass("hidden")
+                //$(elem).addClass("hidden");
+                
+                $("#present").addClass("fadeOut");
+                resetPresent();
             }
         } else {
             leftpos++;
@@ -79,4 +88,11 @@ function animateGem(gem) {
             }
         }
     }
+    
+}
+
+function resetPresent() {
+    $("#present").addClass("hidden");
+    $(".gem").addClass("hidden");
+    $("#topPresent").removeClass("topOff");
 }

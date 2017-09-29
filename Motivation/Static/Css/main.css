@@ -50,7 +50,7 @@ body {
 h1 {
     color: #959595;
     font-weight:normal;
-    margin: 20px 0 0 0;
+    margin: 40px 0 0 0;
 }
 
 .container {
@@ -106,7 +106,7 @@ h1 {
 }
 .cookie, .cookieResponse {
     height: 75px;
-    margin: 20px auto;
+    margin: 0px auto;
     line-height: 35px;
     font-style:italic;
     max-width:450px;
@@ -178,14 +178,35 @@ h1 {
 
 /*Stop 1: width: 75px; margin: 0 8px;*/
 @keyframes growGem {
-    0% {
+    /*0% {
         width: 20px;
         margin: 35px 35px;
-    }
+    }*/
 
     100% {
         width: 75px;
         margin: 0 8px;
+    }
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 10s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity:1;
+    }
+    100% {
+        opacity: 0;
     }
 }
 

@@ -171,6 +171,8 @@
     <Content Include="Static\MotavationImages\chest.png" />
     <Content Include="Static\MotavationImages\background.jpg" />
     <Content Include="Static\MotavationImages\closed-present.png" />
+    <Content Include="Static\MotavationImages\diamond.png" />
+    <Content Include="Static\MotavationImages\emerald.png" />
     <Content Include="Static\MotavationImages\fortune-cookie.jpg" />
     <Content Include="Static\MotavationImages\diamond-small.png" />
     <Content Include="Static\MotavationImages\emerald-small.png" />
@@ -180,7 +182,9 @@
     <Content Include="Static\MotavationImages\present-bottom-with-band.png" />
     <Content Include="Static\MotavationImages\present-bottom.png" />
     <Content Include="Static\MotavationImages\present-top.png" />
+    <Content Include="Static\MotavationImages\ruby-one-hi.png" />
     <Content Include="Static\MotavationImages\ruby-small.png" />
+    <Content Include="Static\MotavationImages\saph.jpg" />
     <Content Include="Static\MotavationImages\sapphire-small.png" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -199,6 +203,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Static\MotavationImages\chest-small.pdn" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Static\MotavationImages\ruby" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
