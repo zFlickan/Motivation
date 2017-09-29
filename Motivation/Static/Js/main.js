@@ -25,33 +25,51 @@ function getRandomGem() {
 
 function animateGem(gem) {
     var p = $("#treasureChest");
-    var position = p.position();
-    var elem = document.getElementById(gem)
-    var toppos = $("#" + gem).position().top
-    var leftpos = $("#" + gem).position().left
+    var position = p.offset();
+    var elem = document.getElementById(gem);
+    var boxTop = Math.floor($(elem).offset().top);
+    var boxLeft = Math.floor($(elem).offset().left);
+    var chestTop = Math.floor(position.top);
+    var chestLeft = Math.floor(position.left);
+    var toppos = 0;
+    var leftpos = 0;
+    var topFinished = false;
+    var leftFinished = false;
 
     var id = setInterval(frame, 5);
     function frame() {
-        if (toppos == (position.top - 30)) {
+        if (toppos == (chestTop - boxTop) || (boxTop - chestTop) == toppos) {
+            topFinished = true;
             clearInterval(id);
-            if (toppos == (position.top - 30) && leftpos == (position.left + 10)) {
-                $("#" + gem).addClass("hidden")
+            if (topFinished && leftFinished) {
+                $(elem).addClass("hidden")
             }
         } else {
             toppos++;
+            if (chestTop < boxTop) {
+                elem.style.top = -toppos + 'px';
+            }
+            else {
             elem.style.top = toppos + 'px';
+            }
         }
     }
     var id2 = setInterval(frame2, 5);
     function frame2() {
-        if (leftpos == (position.left + 10)) {
+        if (leftpos == (chestLeft - boxLeft) || (boxLeft - chestLeft) == leftpos) {
+            leftFinished = true;
             clearInterval(id2);
-            if (toppos == (position.top - 30) && leftpos == (position.left + 10)) {
-                $("#" + gem).addClass("hidden")
+            if (topFinished && leftFinished) {
+                $(elem).addClass("hidden")
             }
         } else {
             leftpos++;
-            elem.style.left = -leftpos + 'px';
+            if (chestLeft < boxLeft) {
+                elem.style.left = -leftpos + 'px';
+            }
+            else {
+                elem.style.left = leftpos + 'px';
+            }
         }
     }
 }

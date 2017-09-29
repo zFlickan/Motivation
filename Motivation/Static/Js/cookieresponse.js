@@ -8,7 +8,7 @@ $(".cookie").click(function () {
 //ONLY FUNCTIONS THAT ARE CALLED FROM WITHIN THE COUNTER CAN BE BELOW
 $(function () {
     hideAll();
-    var counter = 0;
+    var counter = 60;
     var myInterval = setInterval(function () {
         
         if (counter === 20) {
@@ -17,7 +17,7 @@ $(function () {
             cookieReward(h1, p);
         }
 
-        if (counter === 0) {
+        if (counter === 60) {
             hideAll();
             var h1 = "1 hour reward";
             giftReward(h1, p);
@@ -29,7 +29,7 @@ $(function () {
 })
 
 // to stop the counter
-clearInterval(myInterval);
+//clearInterval(myInterval);
 
 function hideAll() {
     $(".cookieResponse").addClass("hidden");
