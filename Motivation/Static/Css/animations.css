@@ -12,7 +12,7 @@
     animation-fill-mode: forwards;
 }
 
-#diamond, #emerald{
+#diamond, #emerald, #sapphire, #ruby{
     position:absolute;
     z-index:4;
     top:0;
@@ -22,4 +22,26 @@
 #parentTag {
     position:absolute;
     right:20px;
+}
+
+.treasureContent {
+    min-height: 100px;
+    background: #b6ff00;
+    top: -120px;
+    animation: revealChestContent;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    z-index:2;
+}
+
+@keyframes revealChestContent{
+    0% {top: -120px; min-height: 100px; }
+    100% {top: -240px; min-height:120px;}
+}
+
+.stashedTreasure {
+    margin: auto;
+    width: 40%;
+    display: block;
+    margin-top: 20px;
 }

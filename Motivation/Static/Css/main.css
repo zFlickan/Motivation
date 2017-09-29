@@ -117,6 +117,7 @@ h1 {
     border-top-right-radius: 0;
     background: #dfdfdf;
     min-height: 120px;
+    z-index: 3;
 }
 
 .hidden{
@@ -160,4 +161,6 @@ h1 {
 
 #treasureChest{
     float:left;
+   
 }
+

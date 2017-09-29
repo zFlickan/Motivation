@@ -6,7 +6,7 @@
 })
 
 function getRandomGem() {
-    var x = Math.floor((Math.random() * 2) + 1);
+    var x = Math.floor((Math.random() * 4) + 1);
     var gem;
     switch (x) {
         case 1:
@@ -15,6 +15,13 @@ function getRandomGem() {
             break;
         case 2: $("#diamond").removeClass("hidden");
             gem = "diamond";
+            break;
+        case 3:
+            $("#ruby").removeClass("hidden");
+            gem = "ruby";
+            break;
+        case 4: $("#sapphire").removeClass("hidden");
+            gem = "sapphire";
             break;
         default: $("#diamond").removeClass("hidden");
             gem = "diamond";
