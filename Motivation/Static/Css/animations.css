@@ -23,9 +23,9 @@
     min-height: 100px;
     background: #c2bbbb;
     top: -120px;
-}
+/*}
 
-.revealContent {
+.revealContent {*/
     animation: revealChestContent;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -41,6 +41,7 @@
     animation-fill-mode: forwards;
     z-index: 2;
 }
+
 
 @keyframes revealChestContent {
     0% {

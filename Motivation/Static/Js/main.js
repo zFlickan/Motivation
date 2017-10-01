@@ -92,12 +92,13 @@ function animateGem(gem, storedGem, count) {
             topFinished = true;
             clearInterval(id);
             if (topFinished && leftFinished) {
-                $(elem).addClass("hidden")
-                elem.style.top = 0 + 'px'
-                elem.style.left = 0 + 'px'
-                $(storedGem).removeClass("hidden")
-                $(storedGem).addClass("block")
-                $(count).removeClass("hidden")
+                $(elem).addClass("hidden");
+                elem.style.top = 0 + 'px';
+                elem.style.left = 0 + 'px';
+                $(storedGem).removeClass("hidden");
+                $(storedGem).addClass("block");
+                $(count).removeClass("hidden");
+                resetPresent();
             }
         } else {
             toppos++;
@@ -115,12 +116,12 @@ function animateGem(gem, storedGem, count) {
             leftFinished = true;
             clearInterval(id2);
             if (topFinished && leftFinished) {
-                $(elem).addClass("hidden")
-                elem.style.top = 0 + 'px'
-                elem.style.left = 0 + 'px'
-                $(storedGem).removeClass("hidden")
-                $(storedGem).addClass("block")
-                $(count).removeClass("hidden")
+                $(elem).addClass("hidden");
+                elem.style.top = 0 + 'px';
+                elem.style.left = 0 + 'px';
+                $(storedGem).removeClass("hidden");
+                $(storedGem).addClass("block");
+                $(count).removeClass("hidden");
             }
         } else {
             leftpos++;
@@ -135,8 +136,3 @@ function animateGem(gem, storedGem, count) {
     
 }
 
-function resetPresent() {
-    $("#present").addClass("hidden");
-    $(".gem").addClass("hidden");
-    $("#topPresent").removeClass("topOff");
-}

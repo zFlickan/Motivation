@@ -9,9 +9,11 @@ $(".cookie").click(function () {
 
 //})
 //$("#treasureChest").click(function () {
-//    $(".treasureContent").toggle(function () {
-//        $(this).addClass("revealContent");
-//    });
+//    //$(".treasureContent").toggle(function () {
+//    //    $(this).addClass("revealContent");
+//    //});
+//    alert("hej");
+//    $(".treasureContent").addClass("revealContent");
 //})
 
 
@@ -112,9 +114,10 @@ $(function () {
 function hideAll() {
     $(".cookieResponse").addClass("hidden");
     $(".cookie").addClass("hidden");
-    $("#present").addClass("hidden");
+    //$("#present").addClass("hidden");
     //$("#topPresent").addClass("hidden");
     //$("#bottomPresent").addClass("hidden");
+    resetPresent();
 }
 
 function cookieReward(h1, p) {
@@ -126,4 +129,10 @@ function cookieReward(h1, p) {
 function giftReward(h1) {
     $("h1").html(h1);
     $("#present").removeClass("hidden");
+}
+
+function resetPresent() {
+    $("#present").addClass("hidden");
+    $(".gem").addClass("hidden");
+    $("#topPresent").removeClass("topOff");
 }

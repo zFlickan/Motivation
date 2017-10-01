@@ -1,6 +1,7 @@
 ﻿body {
     background: #a0c2f0 url('../MotavationImages/background.jpg') no-repeat fixed center top;
     background-size: cover;
+    overflow:hidden;
 }
 
 /*// Extra small devices (portrait phones, less than 576px) 
